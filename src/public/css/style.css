@@ -16,6 +16,9 @@ img {
 }
 
 
+/* index */
+
+
 /* Header */
 
 header {
@@ -203,6 +206,46 @@ footer .pay p,
 footer .copyright {
     color: #666;
     margin: 10px;
+}
+
+
+/* register.html */
+
+main .register-form {
+    width: 70vw;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+main .register-form form .structure-form {
+    display: block;
+    margin: auto;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 5%;
+}
+
+main .register-form form .title-input {
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    width: 100%;
+    margin: 15px 0;
+}
+
+
+/* login.html */
+
+main .login-form {
+    width: 70vw;
+    margin: auto;
+}
+
+main .login-form .structure-2 {
+    display: block;
+    width: 90%;
 }
 
 

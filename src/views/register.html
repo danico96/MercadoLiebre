@@ -18,11 +18,11 @@
                 <img src="./images/logo-mercado-liebre.svg" alt="Logo">
             </div>
             <form action="/" method="POST" class="search-bar">
-                <input type="text" placeholder="Buscar productos, marcas"> <i class="fas fa-search"></i>
+                <input type="search" placeholder="Buscar productos, marcas"> <i class="fas fa-search"></i>
             </form>
-        </div>
-        <div class="header-message">
-            <p><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+            <div class="header-message">
+                <p><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+            </div>
         </div>
         <nav class="navbar">
             <ul class="nav1">
@@ -35,7 +35,7 @@
             <ul class="nav2">
                 <li><a href="/register">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
                 <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
-                <li><a href="#">Mis Compras <i class="fas fa-sign-in-alt"></i></a></li>
+                <li><a href="#">Mis Compras <i class="fas fa-shopping-basket"></i></a></li>
             </ul>
         </nav>
 
@@ -53,61 +53,73 @@
         <section class="register-form">
             <form action="/" method="GET">
 
-                <input type="text" name="name" placeholder="Nombre y apellido" class="structure-form">
+                <input type="text" name="name" placeholder="Nombre y apellido" required minlength="3" class="structure-form">
 
-                <input type="text" name="user" placeholder="Nombre de usuario@" class="structure-form">
+                <input type="text" name="user" placeholder="Nombre de usuario@" required minlength="2" class="structure-form">
 
                 <label for="birth" class="title-input">Fecha de nacimiento: </label>
-                <input type="date" name="birth" id="birth" class="structure-form">
+                <input type="date" name="birth" id="birth" required class="structure-form">
 
-                <input type="text" name="address" placeholder="Domicilio" class="structure-form">
+                <input type="text" name="address" placeholder="Domicilio" required minlength="3" class="structure-form">
 
                 <label for="profile" class="title-input">Perfil de usuario: </label>
-                <input type="radio" name="profile" id="profile" value="buy"> Comprar
-                <input type="radio" name="profile" id="profile" value="sell"> Vender
+                <div class="radio">
+                    <input type="radio" name="profile" id="profile" value="buy"> Comprar
+                    <input type="radio" name="profile" id="profile" value="sell"> Vender
+                </div>
 
                 <label for="categories" class="title-input">Categorías de interés: </label>
-                <input type="checkbox" name="categories" id="categories" value="electro"> Electro
-                <input type="checkbox" name="categories" id="categories" value="fashion"> Moda
-                <input type="checkbox" name="categories" id="categories" value="home"> Hogar
-                <input type="checkbox" name="categories" id="categories" value="toy-store"> Juguetería
-                <input type="checkbox" name="categories" id="categories" value="healthy-lifestyle"> Vida sana
+                <div class="checkbox">
+                    <input type="checkbox" name="categories" id="categories" value="electro"> Electro
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" name="categories" id="categories" value="fashion"> Moda
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" name="categories" id="categories" value="home"> Hogar
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" name="categories" id="categories" value="toy-store"> Juguetería
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" name="categories" id="categories" value="healthy-lifestyle"> Vida sana
+                </div>
 
-                <label for="photo-profile" class="titlpe-input">Foto de usuario:</label>
-                <input type="file" accept="image/*" name="photo-profile" id="photo-profile">
+                <label for="photo-profile" class="title-input">Foto de usuario:</label>
+                <input type="file" accept="image/*" name="photo-profile" required id="photo-profile">
 
-                <input type="password" name="password" placeholder="Contraseña" class="structure-form">
+                <input type="password" name="password" placeholder="Contraseña" required class="structure-form">
 
-                <input type="password" name="password-confirm" placeholder="Confirmar contraseña" class="structure-form">
+                <input type="password" name="password-confirm" placeholder="Confirmar contraseña" required class="structure-form ">
 
-                <input type="submit" name="send" value="Enviar">
+                <input type="submit" name="send" value="Enviar" class="button-form">
 
-                <input type="reset" name="delete" value="Borrar">
+                <input type="reset" name="delete" value="Borrar" class="button-form">
 
             </form>
         </section>
     </main>
 
     <footer>
-        <section class="pay">
-            <i class="fas fa-credit-card"></i>
+        <section class="pay ">
+            <i class="fas fa-credit-card "></i>
             <h4>Pagá con tarjeta o en efectivo</h4>
             <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
         </section>
 
-        <section class="shipping">
-            <i class="fas fa-gift"></i>
+        <section class="shipping ">
+            <i class="fas fa-gift "></i>
             <h4>Envío gratis desde $2.500</h4>
             <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.</p>
         </section>
 
-        <section class="security">
-            <i class="fas fa-user-shield"></i>
+        <section class="security ">
+            <i class="fas fa-user-shield "></i>
             <h4>Seguridad de principio a fin</h4>
             <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.</p>
         </section>
 
-        <section class="copyright">
+        <section class="copyright ">
             <p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
         </section>
 

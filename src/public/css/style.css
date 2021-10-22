@@ -410,8 +410,18 @@ main .login-form .button-form {
     main .login-form form .button-form:hover {
         background: #0022AA;
     }
+    main .login-form form {
+        width: 70%;
+    }
     /* register.html */
     main .register-form form .button-form:hover {
         background: #0022AA;
+    }
+    main .register-form form {
+        width: 70%;
+    }
+    main .register-form form .button-form {
+        display: inline-block;
+        width: 49%;
     }
 }
